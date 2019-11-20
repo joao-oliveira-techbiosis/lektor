@@ -1,0 +1,54 @@
+$background: #f4f2e8;
+$text-color: #333;
+$text-selection-color: #efbb35;
+$page-max-width: 680px;
+$page-navigation-background: white;
+
+.special-word {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.special-word:hover {
+  background: $text-selection-color;
+  text-decoration: none;
+  -moz-box-shadow: 0 0 4px $text-selection-color;
+  -webkit-box-shadow: 0 0 4px $text-selection-color;
+  box-shadow: 0 0 4px $text-selection-color;
+  transition: 250ms;
+}
+
+.special-word.visible .tooltip {
+  display: block;
+  transition: 250ms;
+}
+
+.tooltip {
+  display: none;
+  margin-top: -100px; /* moves it down */
+  position: absolute;
+  z-index: 1;
+  padding: 6px;
+
+  color: hsl(0, 0%, 90%);
+  background: #212121;
+  border-radius: 1px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15%);
+
+  line-height: 1.5;
+  font-size: 16px;
+
+  .tooltip-word {
+    color: #f7d288;
+  }
+
+  user-select: none;
+}
+
+@media screen and (min-width: 800px) {
+  .tooltip {
+    padding: 9px 12px;
+    line-height: 1.25;
+    font-size: 18px;
+  }
+}

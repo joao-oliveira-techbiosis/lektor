@@ -1,0 +1,25 @@
+$header-background: #f7f6f0;
+
+.header {
+  background: $header-background;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  width: 100%;
+
+  h1 {
+    margin: 0;
+  }
+
+  .link {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: grey;
+      transition: 250ms;
+    }
+  }
+}
