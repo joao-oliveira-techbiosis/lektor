@@ -1,0 +1,51 @@
+
+.book-list {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-y: auto;
+
+  .book-container {
+    margin-right: 25px;
+
+    &:hover {
+      transition: 0.25s;
+      filter: brightness(95%);
+    }
+
+    .book-cover {
+      line-height: 0;
+      font-size: 0;
+
+      img {
+        width: 128px;
+        min-width: 128px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+
+    .book-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+
+      .title {
+        font-size: 12px;
+        font-weight: bold;
+        color: #332200;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .subtitle {
+        font-size: 11px;
+        color: #928b7c;
+      }
+    }
+  }
+}

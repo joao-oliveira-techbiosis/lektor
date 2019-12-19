@@ -75,7 +75,7 @@ class Page extends React.PureComponent {
             <div className="page swing-in-top-bck">
                 <div className="page-navigation">
                     <div className="page-navigation-container">
-                        <Link to="/library" className="page-navigation-item">
+                        <Link to="/" className="page-navigation-item">
                             <img src={Back} alt="Italian Trulli"></img>
                         </Link>
                         <img className="page-navigation-item" src={Contents} alt="Italian Trulli"></img>

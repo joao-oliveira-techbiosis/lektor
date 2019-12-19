@@ -4,7 +4,7 @@ $header-background: #f7f6f0;
   background: $header-background;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   padding: 8px 35px 0 35px;
   justify-content: space-between;
   height: 64px;
@@ -13,6 +13,26 @@ $header-background: #f7f6f0;
 
   h1 {
     margin: 0;
+  }
+
+  .leftSideNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    img{
+      margin: 0 15px;
+    }
+  }
+
+  .rightSideNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    img{
+      margin: 0 15px;
+    }
   }
 
   .link {
