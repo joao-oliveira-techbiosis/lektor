@@ -5,13 +5,8 @@ import "./header.scss";
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <h1>
-      <Link to="/" className="link">
-        {siteTitle}
-      </Link>
-    </h1>
     <Link to="/library" className="link">
-      Library
+      <img src="/icons/icon-72x72.png" />
     </Link>
   </header>
 )
