@@ -5,6 +5,13 @@ import { StaticQuery, graphql } from 'gatsby';
 import reactStringReplace from 'react-string-replace';
 import { Link } from "gatsby"
 
+import Back from "../images/Icons/back.svg";
+import Contents from "../images/Icons/contents.svg";
+import TextSize from "../images/Icons/text size.svg";
+import Search from "../images/Icons/search.svg";
+import Settings from "../images/Icons/settings.svg";
+import Bookmarks_off from "../images/Icons/bookmarks_off.svg";
+
 import "./page.scss";
 
 const query = graphql`
@@ -69,13 +76,13 @@ class Page extends React.PureComponent {
                 <div className="page-navigation">
                     <div className="page-navigation-container">
                         <Link to="/library" className="page-navigation-item">
-                            <img src="/icons/back.svg" alt="Italian Trulli"></img>
+                            <img src={Back} alt="Italian Trulli"></img>
                         </Link>
-                        <img className="page-navigation-item" src="/icons/contents.svg" alt="Italian Trulli"></img>
-                        <img className="page-navigation-item" src="/icons/text size.svg" alt="Italian Trulli"></img>
-                        <img className="page-navigation-item" src="/icons/search.svg" alt="Italian Trulli"></img>
-                        <img className="page-navigation-item" src="/icons/settings.svg" alt="Italian Trulli"></img>
-                        <img className="page-navigation-item" src="/icons/bookmarks_off.svg" alt="Italian Trulli"></img>
+                        <img className="page-navigation-item" src={Contents} alt="Italian Trulli"></img>
+                        <img className="page-navigation-item" src={TextSize} alt="Italian Trulli"></img>
+                        <img className="page-navigation-item" src={Search} alt="Italian Trulli"></img>
+                        <img className="page-navigation-item" src={Settings} alt="Italian Trulli"></img>
+                        <img className="page-navigation-item" src={Bookmarks_off} alt="Italian Trulli"></img>
                     </div>
                 </div>
 
