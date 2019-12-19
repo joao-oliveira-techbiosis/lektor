@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from "gatsby"
-import "../pages/library.scss";
+import "../../pages/page";
 
-
-class Page extends React.PureComponent {
+class Book extends React.PureComponent {
     constructor(props) {
         super(props);
     }
@@ -25,4 +24,4 @@ class Page extends React.PureComponent {
     }
 }
 
-export default Page;
+export default Book;
