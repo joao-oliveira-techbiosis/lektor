@@ -11,7 +11,7 @@ class Page extends React.PureComponent {
     render = () => {
         const { book } = this.props;
 
-        return <div className="book-container scale-in-center">
+        return <div className="book-container">
             <Link className="book-cover" to="/page">
                 <img src={book.img} alt="Book Cover" />
             </Link>

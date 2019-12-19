@@ -38,7 +38,7 @@ $page-navigation-background: #F7F6F0;
     }
   }
 
-  .page-content {
+  .page-content-container {
     font-family: Georgia;
     font-size: 18px;
     font-weight: 400;
@@ -49,6 +49,7 @@ $page-navigation-background: #F7F6F0;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
+    margin: 120px 16px;
 
     scroll-behavior: smooth;
 
@@ -56,6 +57,7 @@ $page-navigation-background: #F7F6F0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 
     .title {
       font-size: 24px;
@@ -84,7 +86,7 @@ $page-navigation-background: #F7F6F0;
 
 @media screen and (min-width: 800px) {
   .page {
-    .page-content {
+    .page-content-container {
       margin: 120px auto;
       font-size: 24px;
       line-height: 1.5;

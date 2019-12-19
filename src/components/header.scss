@@ -4,10 +4,12 @@ $header-background: #f7f6f0;
   background: $header-background;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 20px;
+  align-items: baseline;
+  padding: 8px 35px 0 35px;
   justify-content: space-between;
+  height: 64px;
   width: 100%;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2%);
 
   h1 {
     margin: 0;
